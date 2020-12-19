@@ -155,7 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DoggyFucker.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Manager.cpp" />
   </ItemGroup>
   <ItemGroup>
